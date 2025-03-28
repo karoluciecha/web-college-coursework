@@ -1,0 +1,12 @@
+h1:first-of-type {
+    text-shadow: 4px -4px 5px #000000;
+}
+h1:nth-child(2) {
+    text-shadow: -4px -4px 5px #0000FF;
+}
+h1:nth-child(3) {
+    text-shadow: 4px 4px 5px #FF0000;
+}
+h1:last-of-type {
+    text-shadow: -4px 4px 5px #006400;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Author: Karol -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<title>HTML5 Validation</title>
+	</head>
+	<body>
+		<main>
+			<form action="" method="">
+				<fieldset>
+					<legend></legend>
+					<label for="fname">First Name:</label><br>
+					<input type="text" id="fname" name="fname" required><br><br>
+					<label for="sname">Surname:</label><br>
+					<input type="text" id="sname" name="sname" required><br><br>
+					<label for="tnum">Telephone Number:</label><br>
+					<input type="tel" id="tnum" name="tnum" placeholder="091-702881" pattern="[0-9]{3}-[0-9]{6}" required><br><br>
+					<label for="email">Email Address:</label><br>
+					<input type="email" id="email" name="email" required><br><br>
+					<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+		</main>
+	</body>
+</html>

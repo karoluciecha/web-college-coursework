@@ -1,0 +1,27 @@
+/* Karol - G00436758 */
+.container > div {
+    border: 10px solid blue;
+    background-color: pink;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-gap: 10px;
+}
+.container > div:nth-of-type(2) {
+    background-color: lightgreen;
+    grid-column: span 2;
+}
+.container > div:nth-of-type(7) {
+    background-color: lightblue;
+    grid-row: span 2;
+}
+.container > div:nth-of-type(9) {
+    background-color: orange;
+}
+.container > div:nth-of-type(11) {
+    background-color: black;
+    color: white;
+    grid-column: span 3;
+}

@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'BeaufortforLOL';
+	src: url('packages/BeaufortforLOL-Bold.otf') format('opentype'); /* Specify the path to your font file */
+	font-weight: normal; /* Specify the font weight */
+	font-style: normal; 
+}
+*:hover {
+	cursor: url(packages/cursor.png), auto;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+}
+#poczatek {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1 {
+	font-family: 'BeaufortforLOL';
+	font-size: 5em;
+	background: repeating-linear-gradient(to right, #005A82, #0AC8B9);
+	-webkit-background-clip: text;
+	background-clip: text;
+  	color: transparent;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+body {
+	background: linear-gradient(to right, #091428, #0A1428);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+  }
+label, p, h3 {
+	font-family: 'BeaufortforLOL';
+	background: repeating-linear-gradient(to right, #785A28, #C89B3C);
+	-webkit-background-clip: text;
+	background-clip: text;
+  	color: transparent;
+}
+#resh {
+	margin-top: 15%;
+}
+#rest {
+	font-size: 2em;
+	color: #CDFAFA;
+}
+input, button {
+	font-family: 'BeaufortforLOL';
+	color: #F0E6D2;
+	background-color: #32281E;
+	border-color: #32281E;
+	text-align: center;
+	padding: 1%;
+	margin-top: 1%;
+	border-color: #785A28;
+}
+input:hover, button:hover {
+	cursor: url(packages/cursor-pointer.png), auto;
+}
+#sbm, button {
+	border-radius: 25%;
+}
+img {
+	width: 85%;
+	margin-top: 0;
+}
+#copy {
+	color: #C89B3C;
+}
+button {
+	display: none;
+}

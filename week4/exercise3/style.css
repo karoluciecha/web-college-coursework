@@ -1,0 +1,39 @@
+nav {
+    width: 100%;
+    padding: 0;
+}
+#headimg {
+    width: 100%;
+    margin: 0;
+}
+.navp {
+    display: inline-block;
+}
+.first {
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left;
+    width: 20%;
+}
+.second {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    float: right;
+    width: 20%;
+}
+.content >   {
+    text-align: justify;
+    text-indent: 2.5%;
+}
+.full {
+    width: 40%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#content {
+    width: 100%;
+    margin-bottom: 1%;
+}

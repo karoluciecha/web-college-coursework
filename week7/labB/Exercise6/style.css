@@ -1,0 +1,32 @@
+table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+th:not(#white) {
+    background-color: yellow;
+}
+#white {
+    background-color: black;
+    color: white;
+}
+a {
+    color: white;
+}
+td {
+    background-color: lightgoldenrodyellow;
+}
+.grn {
+    background-color: darkgreen;
+}
+.blu {
+    background-color: darkblue;
+}
+.dre {
+    background-color: darkred;
+}

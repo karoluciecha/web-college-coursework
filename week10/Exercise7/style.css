@@ -1,0 +1,64 @@
+/* Karol - G00436758 */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.container > div {
+    border-radius: 2px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 30px;
+    grid-gap: 4px;
+    width: 90%;
+}
+
+.container > div:nth-of-type(1) {
+    background-color: rgb(23, 154, 242);
+    color: white;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    grid-column: span 4;
+    letter-spacing: 1px;
+}
+.container > div:nth-of-type(6) {
+    background-color: rgb(23, 154, 242);
+    color: white;
+    grid-column: span 4;
+    font-family: 'Russo One', sans-serif;
+    padding: 5px 0 0 5px;
+}
+a {
+    color:rgb(23, 154, 242);
+    text-decoration: none;
+    background-color: white;
+    padding: 1px 3px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+a:hover {
+    color: white;
+    background-color: rgb(23, 154, 242);
+}
+p {
+    margin: 0 5px;
+    display: block;
+    margin-bottom: 30px;
+}
+.container > div:nth-of-type(2), div:nth-of-type(3), div:nth-of-type(4), div:nth-of-type(5) {
+    border: 1px solid rgb(23, 154, 242);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+body {
+    display: flex;
+    justify-content: center;
+}

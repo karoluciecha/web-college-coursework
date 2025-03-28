@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+#f {
+    font-family: 'Caveat', cursive;
+    display: block;
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 20px;
+}
+#s {
+    font-family: 'Sigmar One', sans-serif;
+    display: block;
+    color: red;
+    margin: 0;
+    line-height: 75%;
+    font-size: 5em;
+    text-shadow: 3px 3px 5px black;
+}
+#t {
+    display: block;
+    margin: 0;
+    font-size: 3.5em;
+    line-height: 55px;
+    font-family: 'Caveat', cursive;
+}

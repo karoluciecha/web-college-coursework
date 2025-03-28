@@ -1,0 +1,19 @@
+body {
+    background-color: lightgreen;
+}
+
+#prim {
+    border: none;
+}
+img {
+    height: 30px;
+}
+.pair {
+    display: flex;
+    margin: 1%;
+}
+.radd {
+    display: inline-block;
+    margin-top: 7px;
+    margin-right: 3px;
+}

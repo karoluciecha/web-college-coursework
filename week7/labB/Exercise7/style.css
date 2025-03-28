@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: white;
+}
+center {
+    background-color: darkgrey;
+    padding: 10px;
+}
+a {
+    color: white;
+    padding: 10px;
+    background-color: darkblue;
+}
+img {
+    color: red;
+}

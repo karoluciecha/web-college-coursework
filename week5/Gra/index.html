@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="apple-touch-icon" sizes="57x57" href="packages/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="packages/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="packages/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="packages/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="packages/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="packages/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="packages/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="packages/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="packages/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="packages/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="packages/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="packages/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="packages/favicon-16x16.png">
+	<link rel="manifest" href="packages/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="packages/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta charset="utf-8" />
+	<title>Vigenere Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body id='main'>
+
+	<div id='poczatek'>
+		<h3 id="copy">&copy; 2023 G00436758</h3>
+		<h1>VIGENERE CIPHER</h1>
+		<img alt="decoration" src="packages/decorator-hr-lg.png" /><br><br>
+		<form id='formularz' action='' method=''>
+			<input type="radio" id="encrypt" name="mode" value="encrypt" checked="checked">
+  			<label for="encrypt">ENCRYPT</label>
+ 			<input type="radio" id="decrypt" name="mode" value="decrypt">
+  			<label for="decrypt">DECRYPT</label><br><br>
+			<label for="texts">YOUR TEXT:</label><br>
+			<input type="text" id="texts" autofocus><br><br><br>
+			<label for="keyword">YOUR KEYWORD:</label><br>
+			<input type="text" id="keyword"><br><br>
+			<input type='submit' id="sbm" value='GO!'><br>
+		</form>
+		<h3 id="resh"></h3>
+		<p id="rest"></p>
+		<button id="copyt" onclick="copy()">COPY!</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

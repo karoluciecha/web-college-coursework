@@ -1,0 +1,3 @@
+p:nth-child(2n), h1 {
+    color: red;
+}
