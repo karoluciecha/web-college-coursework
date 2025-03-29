@@ -1,6 +1,0 @@
-p:nth-child(2n), h1 {
-    color: red;
-}
-h1:nth-of-type(1) {
-    background-color: yellow;
-}
