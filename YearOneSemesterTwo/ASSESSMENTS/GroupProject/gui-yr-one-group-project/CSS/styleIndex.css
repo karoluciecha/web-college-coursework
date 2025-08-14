@@ -1,0 +1,145 @@
+/* Style file for the index.html website */
+
+
+/* Welcome Sign */
+.welcome
+    {
+        color: rgb(30, 35, 40);
+        text-align: center;
+        position: relative;
+        font-size: 150px;
+        animation-name: title;
+        animation-delay: 1s;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+    }
+/* Animation Code For Welcome Sign */
+@keyframes title {
+    0% {top: 0px;opacity: 0%;}
+    50% {opacity: 100%; color: rgb(200, 155, 60);}
+    51% {top: 0px; transform: scale(1,1);}
+    100% {top: -150px; transform: scale(0.5, 0.5); color: rgb(200, 155, 60);}
+}
+
+/* Decoration Image */
+.image-Line
+    {
+        opacity: 0%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        animation-name: headerLine;
+        position: fixed;
+        width: 1200px;
+        top: 175px;
+        right: 350px;
+        animation-delay: 6s;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+/* Image Decoration Animation */
+@keyframes headerLine {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+/* Main Body Text */
+.mainText
+{
+    color: rgb(160, 155, 140);
+    font-size: 25px;
+    position: fixed;
+    top: 250px;
+    animation-name: mainBody;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@keyframes mainBody {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+/* Link Selector Through Images */
+div.image-container-Game
+{
+    width: 300px;
+    height: 250px;
+    border-style: solid;
+    border-color: rgb(240, 230, 210);
+    border-width: 1px;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 150px;
+    margin-left: 400px;
+    animation-name: Select-Img;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+div.image-container-Cipher
+{
+    width: 300px;
+    height: 250px;
+    border-style: solid;
+    border-color: rgb(240, 230, 210);
+    border-width: 1px;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 150px;
+    margin-left: 400px;
+    animation-name: Select-Img;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    
+}
+
+.VigCip-Img
+{
+    width: 300px;
+    height: 250px;
+    animation-name: Select-Img;
+    transition: all .2s ease-in-out;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+.VigGame-Img
+{
+    width: 300px;
+    height: 250px;
+    transition: all .2s ease-in-out;
+    animation-name: Select-Img;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+   
+}
+
+.VigGame-Img:hover {
+    cursor: url(../IMAGES/cursor.png), auto;
+    filter: blur(1.5px);
+    transform: scale(1.1);
+}
+
+.VigCip-Img:hover {
+    cursor: url(../IMAGES/cursor.png), auto;
+    filter: blur(1.5px);
+    transform: scale(1.1);
+}
+
+@keyframes Select-Img {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}

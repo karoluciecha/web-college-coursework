@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="apple-touch-icon" sizes="57x57" href="../IMAGES/FAVICON/apple-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="../IMAGES/FAVICON/apple-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="../IMAGES/FAVICON/apple-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="../IMAGES/FAVICON/apple-icon-76x76.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="../IMAGES/FAVICON/apple-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="../IMAGES/FAVICON/apple-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="../IMAGES/FAVICON/apple-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="152x152" href="../IMAGES/FAVICON/apple-icon-152x152.png"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="../IMAGES/FAVICON/apple-icon-180x180.png"/>
+	<link rel="icon" type="image/png" sizes="192x192"  href="../IMAGES/FAVICON/android-icon-192x192.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="../IMAGES/FAVICON/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="../IMAGES/FAVICON/favicon-96x96.png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="../IMAGES/FAVICON/favicon-16x16.png"/>
+	<link rel="manifest" href="../IMAGES/FAVICON/manifest.json"/>
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="../IMAGES/FAVICON/ms-icon-144x144.png"/>
+	<meta name="theme-color" content="#ffffff"/>
+	<meta charset="utf-8"/>
+	<title>GAME - VIGCIP</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styleGeneral.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/fonts.css"/>
+	<link rel="stylesheet" type="text/css" href="../CSS/styleGameVigenere.css"/>
+</head>
+
+<body>
+	<nav>
+		<div>
+			<a href="index.html">HOMEPAGE</a>
+		</div>
+		<div>
+			<a href="cipherVigenere.html">VIGENERE CIPHER</a>
+		</div>
+		<div class="currentPage">
+			<a href="#main"  class="currentPage">VIGENERE GAME</a>
+		</div>
+		<div>
+			<a href="">WORK IN PROGRESS</a>
+		</div>
+		<div>
+			<a href="about.html">ABOUT US</a>
+		</div>
+	</nav>
+	<main>
+		<div class="title">VIGENERE GAME</div>
+		<div id="lvlDesc">WELCOME TO THE GAME</div>
+		<div class="moreDesc">
+			<p>Welcome to Vigenere Game. The game has two modes - encoding and decoding. Each mode has three difficulty levels - easy, medium and hard. To move to a higher level, you must correctly encode/decode the password using Vigenere encryption rules. In each mode, you can only make three mistakes. Lives are renewed daily and also the expression to encode/decode changes every day. Good luck!</p>
+		</div>
+		<div class="radio">
+			<div class="radioOption encodeRadio">
+				<input class="radioInput" type="radio" value="0" name="gameMode" id="radioEncode"/>
+				<label class="radioLabel" for="radioEncode">ENCODE</label>
+			</div>
+			<div class="radioOption decodeRadio">
+				<input class="radioInput" type="radio" value="1" name="gameMode" id="radioDecode"/>
+				<label class="radioLabel" for="radioDecode">DECODE</label>
+			</div>
+		</div>
+		<div id="questionWrapper">
+			<div class="questionTaskWrapper">
+				<p>INPUT</p>
+				<p>CIPHER KEY</p>
+			</div>
+			<div class="questionDataWrapper">
+				<p id="questionInput"></p>
+				<p id="questionKey"></p>
+			</div>
+		</div>
+		<form id="formVigGame" action="" method="">
+			<input type="text" id="keyword" placeholder="TYPE ANSWER HERE"><br><br>
+			<input type="submit" id="sbm" value="CHECK!"><br>
+		</form>
+		<div class="feedback">
+			<p id="feedbackMessage"></p>
+		</div>
+	</main>
+	<footer>
+		<div>
+			<p id="copy">&copy; 2024 BY G00432442 | G00428784 | G00436758</p>
+		</div>
+	</footer>
+	<script src="../JS/scriptGameVigenere.js"></script>
+</body>
+</html>

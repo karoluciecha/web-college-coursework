@@ -1,0 +1,105 @@
+/* Style file for the cipherVigenere.html website */
+
+.textLabel, .keywordLabel, #resh {
+    font-family: "Beaufort for LOL";
+    font-size: 1.25rem;
+    line-height: 1.12;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: rgb(200, 155, 60);
+    text-transform: uppercase;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.textLabel > p, .keywordLabel > p{
+    margin: 30px 0 15px 0;
+}
+
+.textLabel > p::before, .textLabel > p::after, .keywordLabel >p::before, .keywordLabel >p::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.75em;
+    height: 100%;
+    margin: 0 0.375em;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.textLabel > p::before, .keywordLabel >p::before {
+    background-image: url("../IMAGES/decorator-left.png");
+}
+
+.textLabel > p::after, .keywordLabel >p::after {
+    background-image: url("../IMAGES/decorator-right.png");
+}
+
+.radio {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.radioOption {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.encodeRadio {
+    padding: 15px 80px 15px 0;
+    border-right: 0.5px solid rgb(200, 155, 60);
+}
+
+.decodeRadio {
+    padding: 15px 0 15px 80px;
+    border-left: 0.5px solid rgb(200, 155, 60);
+}
+
+.radioInput {
+    display: none;
+}
+
+.radioLabel {
+    border: 1px solid rgb(70, 55, 20);
+    border-radius: 4px;
+    padding: 15px 20px;
+    color: rgb(91, 90, 86);
+    background-color: rgb(50, 40, 30);
+    transition: 0.5s;
+}
+
+.radioInput:checked + .radioLabel {
+    color: rgb(240, 230, 210);
+    border: 1px solid rgb(120 90 40);
+    background-color: rgb(70, 55, 20);
+}
+
+.radioLabel:hover {
+	cursor: url(../IMAGES/cursor-pointer.png), auto;
+    border: 1px solid rgb(120 90 40);
+}
+
+#rest {
+    font-family: "Beaufort for LOL";
+    font-size: 1.5rem;
+    line-height: 1.08;
+    letter-spacing: 0em;
+    font-weight: 700;
+    color: rgb(240, 230, 210);
+    text-transform: uppercase;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 2rem 0 0.75rem 0;
+}

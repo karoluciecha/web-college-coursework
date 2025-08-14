@@ -1,0 +1,112 @@
+/* General styles file for all the websites, to achieve a consistant look */
+
+
+*:hover {
+	cursor: url(../IMAGES/cursor.png), auto;
+}
+html, body {
+	margin: 0;
+	padding: 0 0 30px 0;
+}
+nav {
+	width: 100%;
+	text-align: center;
+	background-color: rgb(1, 10, 19);
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 46px;
+	z-index: 100;
+	display: flex;
+}
+nav > div > a, footer > div > p {
+	width: 100%;
+	font-family: "Beaufort for LOL";
+	font-size: 0.75rem;
+	font-weight: 700;
+	line-height: 1.26;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgb(91, 90, 86);
+	transition: 0.5s;
+}
+a.currentPage {
+	color: rgb(240, 230, 210);
+}
+div.currentPage {
+	border-bottom: 1px solid rgb(200, 155, 60);
+}
+nav > div > a:hover {
+	color: rgb(240, 230, 210);
+}
+nav > div {
+	border-bottom: 1px solid rgb(70, 55, 20);
+}
+nav > div {
+	display: grid;
+	align-items: center;
+	width: 20%;
+	height: 45px;
+}
+main {
+	width: 100%;
+	text-align: center;
+}
+h1 {
+	font-family: "BeaufortforLOL-Bold";
+	font-size: 7vw;
+	background: repeating-linear-gradient(to right, #005A82, #0AC8B9);
+	background-clip: text;
+  	color: transparent;
+	margin: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: rgb(30, 35, 40);
+}
+input, button {
+	font-family: "Beaufort for LOL";
+	font-weight: 400;
+	color: #F0E6D2;
+	background-color: #32281E;
+	border-color: #32281E;
+	text-align: center;
+	padding: 1%;
+	border-color: #785A28;
+}
+form > div {
+	margin: 0 2% 0 0;
+	display: inline;
+}
+input:hover, button:hover, nav > div:hover, nav > div > a:hover, .moreDesc > p > a:hover {
+	cursor: url(../IMAGES/cursor-pointer.png), auto;
+}
+#sbm, button {
+	border-radius: 20%;
+}
+img {
+	width: 75%;
+	margin-top: 0;
+}
+#copyt {
+	display: none;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 45px;
+	width: 100vw;
+	text-align: center;
+	background-color: rgb(1, 10, 19);
+	border-top: 1px solid rgb(70, 55, 20);
+	align-items: center;
+}
+*::selection {
+	background-color: rgb(200, 155, 60);
+	color: rgb(1, 10, 19);
+}

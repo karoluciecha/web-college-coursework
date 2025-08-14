@@ -1,0 +1,11 @@
+let myVar = "Karol";
+let num1 = 10;
+let num2 = 20;
+alert(myVar);
+document.write(num1 + num2 + "<br>");
+document.write(num1 - num2 + "<br>");
+document.write(num1 * num2 + "<br>");
+document.write(num1 / num2 + "<br>");
+document.write(num1 % num2 + "<br>");
+document.write(num1++ + "<br>");
+document.write(num1++ + "<br>");

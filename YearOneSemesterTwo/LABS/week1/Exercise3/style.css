@@ -1,0 +1,40 @@
+img {
+    width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+div {
+    padding: 2%;
+}
+
+p {
+    text-align: justify;
+    text-indent: 5%;
+}
+
+div:first-of-type {
+    grid-column: 1 / span 3;
+    background-color:gainsboro;
+    text-align: center;
+}
+button {
+    text-align: center;
+    color: white;
+    background-color: gray;
+    padding: 1em 2em 1em 2em;
+    margin: 0.5em 1em 0.5em 1em;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+}

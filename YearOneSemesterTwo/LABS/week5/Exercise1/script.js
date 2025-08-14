@@ -1,0 +1,1 @@
+document.getElementById("myHeading").innerHTML = "This has changed!";

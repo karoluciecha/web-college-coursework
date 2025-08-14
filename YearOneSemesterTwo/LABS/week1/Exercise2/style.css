@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+img {
+    border: 5px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    background-color: palegoldenrod;
+}
+
+p:last-of-type {
+    font-family: 'Merriweather', serif;
+}
+
+p:nth-of-type(1), p:nth-last-child(2) {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.1em
+}
+
+a:hover {
+    background-color: palegoldenrod;
+    color:black;
+}

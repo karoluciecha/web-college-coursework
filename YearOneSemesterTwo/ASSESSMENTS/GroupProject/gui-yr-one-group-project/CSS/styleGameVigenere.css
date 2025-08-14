@@ -1,0 +1,236 @@
+/* Style file for the gameVigenere.html website */
+
+.title {
+    font-family: "Beaufort for LOL";
+    font-size: 1.25rem;
+    line-height: 1.12;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: rgb(200, 155, 60);
+    margin: 2rem 0 0.75rem 0;
+    text-transform: uppercase;
+    width: 100vw;
+    height: 20px;
+}
+
+.title::before, .title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.75em;
+    height: 100%;
+    margin: 0 0.375em;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.title::before {
+    background-image: url("../IMAGES/decorator-left.png");
+}
+
+.title::after {
+    background-image: url("../IMAGES/decorator-right.png");
+}
+#lvlDesc {
+    font-family: "Beaufort for LOL";
+    font-size: 3rem;
+    line-height: 1.08;
+    letter-spacing: 0em;
+    font-weight: 700;
+    margin: 0 10% 1.1rem 10%;
+    color: rgb(240, 230, 210);
+}
+.moreDesc {
+    font-family: "Spiegel";
+    font-size: 1rem;
+    line-height: 1.24;
+    letter-spacing: 0.01em;
+    color: rgb(160, 155, 140);
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 1461px) {
+    .moreDesc {
+        width: 40vw;
+        margin: 0 30vw;
+    }
+}
+@media (max-width: 1460px) {
+    .moreDesc {
+        width: calc(100vw - 52vw);
+        margin: 0 24vw;
+    }
+    #formVigGame {
+        margin-top: 3%;
+    }
+}
+@media (max-width: 1220px) {
+    .moreDesc {
+        width: calc(100vw - 44vw);
+        margin: 0 22vw;
+    }
+}
+@media (max-width: 1040px) {
+    .moreDesc {
+        width: calc(100vw - 32vw);
+        margin: 0 16vw;
+    }
+    #formVigGame {
+        margin-top: 4%;
+    }
+}
+@media (max-width: 860px) {
+    .moreDesc {
+        width: calc(100vw - 20vw);
+        margin: 0 10vw;
+    }
+}
+@media (max-width: 730px) {
+    .moreDesc {
+        width: calc(100vw - 14vw);
+        margin: 0 7vw;
+    }
+    #formVigGame {
+        margin-top: 5%;
+    }
+}
+.radio {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.radioOption {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.encodeRadio {
+    padding: 15px 80px 15px 0;
+    border-right: 0.5px solid rgb(200, 155, 60);
+}
+.decodeRadio {
+    padding: 15px 0 15px 80px;
+    border-left: 0.5px solid rgb(200, 155, 60);
+}
+.radioInput {
+    display: none;
+}
+.radioLabel {
+    border: 1px solid rgb(70, 55, 20);
+    border-radius: 4px;
+    padding: 15px 20px;
+    color: rgb(91, 90, 86);
+    background-color: rgb(50, 40, 30);
+    transition: 0.5s;
+}
+.radioInput:checked + .radioLabel {
+    color: rgb(240, 230, 210);
+    border: 1px solid rgb(120 90 40);
+    background-color: rgb(70, 55, 20);
+}
+.radioLabel:hover {
+	cursor: url(../IMAGES/cursor-pointer.png), auto;
+    border: 1px solid rgb(120 90 40);
+}
+
+#questionWrapper {
+    width: 100vw;
+    height: auto;
+}
+
+.questionTaskWrapper {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+div.questionTaskWrapper > p {
+    font-family: "Beaufort for LOL";
+    font-size: 1.25rem;
+    line-height: 1.12;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: rgb(200, 155, 60);
+    margin: 0;
+    text-transform: uppercase;
+    height: auto;
+    width: 233px;
+}
+
+div.questionTaskWrapper > p:first-child {
+    padding: 20px 17px 20px 0;
+}
+div.questionTaskWrapper > p:last-child {
+    padding: 20px 0 20px 17px;
+}
+
+div.questionTaskWrapper > p:first-child::before, div.questionTaskWrapper > p:last-child::before, div.questionTaskWrapper > p:first-child::after, div.questionTaskWrapper > p:last-child::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.75em;
+    height: 100%;
+    margin: 0 0.375em;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+div.questionTaskWrapper > p:first-child::before,  div.questionTaskWrapper > p:last-child::before {
+    background-image: url("../IMAGES/decorator-left.png");
+    background-image: url("../IMAGES/decorator-left.png");
+}
+
+div.questionTaskWrapper > p:first-child::after, div.questionTaskWrapper > p:last-child::after {
+    background-image: url("../IMAGES/decorator-right.png");
+    background-image: url("../IMAGES/decorator-right.png");
+}
+
+div.questionDataWrapper {
+    font-family: "Beaufort for LOL";
+    font-size: 1.5rem;
+    line-height: 1.08;
+    letter-spacing: 0em;
+    font-weight: 700;
+    color: rgb(240, 230, 210);
+    text-transform: uppercase;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#questionInput {
+    border-right: 0.5px solid rgb(200, 155, 60);
+    padding: 25px 5% 25px 5%;
+    width: 50%;
+    margin: 0;
+}
+
+#questionKey {
+    border-left: 0.5px solid rgb(200, 155, 60);
+    padding: 25px 5% 25px 5%;
+    width: 50%;
+    margin: 0;
+}
+#formVigGame {
+    margin-top: 2%;
+}
+
+#keyword {
+    text-transform: uppercase;
+}
+#feedbackMessage {
+    font-family: "Beaufort for LOL";
+    font-size: 1.5rem;
+    line-height: 1.08;
+    letter-spacing: 0em;
+    font-weight: 700;
+    color: rgb(240, 230, 210);
+    text-transform: uppercase;
+    transition: 0.5s;
+}

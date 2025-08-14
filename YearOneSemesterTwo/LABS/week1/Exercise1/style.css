@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+img {
+    border: 5px solid red;
+}
+
+body {
+    background-color: #E6F2FF;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}

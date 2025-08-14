@@ -1,0 +1,170 @@
+/* Style file for the about.html website */
+
+.title {
+    font-family: "Beaufort for LOL";
+    font-size: 1.25rem;
+    line-height: 1.12;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: rgb(200, 155, 60);
+    margin: 2rem 0 0.75rem 0;
+    text-transform: uppercase;
+    width: 100vw;
+    height: 20px;
+}
+
+.title::before, .title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.75em;
+    height: 100%;
+    margin: 0 0.375em;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.title::before {
+    background-image: url("../IMAGES/decorator-left.png");
+}
+
+.title::after {
+    background-image: url("../IMAGES/decorator-right.png");
+}
+
+.subtitle {
+    font-family: "Beaufort for LOL";
+    font-size: 3rem;
+    line-height: 1.08;
+    letter-spacing: 0em;
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+    color: rgb(240, 230, 210);
+    width: 100vw;
+}
+
+.decorator {
+    width: 100vw;
+}
+
+.decorator > img {
+    width: 50%;
+}
+@media (min-width: 1461px) {
+    .decorator > img {
+        width: 30%;
+    }
+    .moreDesc {
+        width: 40vw;
+        margin: 0 30vw;
+    }
+}
+
+@media (max-width: 1460px) {
+    .decorator > img {
+        width: 40%;
+    }
+    .moreDesc {
+        width: calc(100vw - 52vw);
+        margin: 0 24vw;
+    }
+}
+@media (max-width: 1220px) {
+    .decorator > img {
+        width: 45%;
+    }
+    .moreDesc {
+        width: calc(100vw - 44vw);
+        margin: 0 22vw;
+    }
+}
+@media (max-width: 1040px) {
+    .decorator > img {
+        width: 50%;
+    }
+    .moreDesc {
+        width: calc(100vw - 32vw);
+        margin: 0 16vw;
+    }
+}
+@media (max-width: 860px) {
+    .decorator > img {
+        width: 55%;
+    }
+    .moreDesc {
+        width: calc(100vw - 20vw);
+        margin: 0 10vw;
+    }
+}
+@media (max-width: 730px) {
+    .decorator > img {
+        width: 60%;
+    }
+    .moreDesc {
+        width: calc(100vw - 14vw);
+        margin: 0 7vw;
+    }
+}
+
+.moreDesc {
+    font-family: "Spiegel";
+    font-size: 1rem;
+    line-height: 1.24;
+    letter-spacing: 0.01em;
+    color: rgb(160, 155, 140);
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgb(200, 155, 60);
+}
+
+.moreDesc > p > a {
+    font-family: "Spiegel";
+    font-size: 1rem;
+    line-height: 1.24;
+    letter-spacing: 0.01em;
+    color: rgb(160, 155, 140);
+    height: auto;
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
+}
+
+.people {
+    width: 100vw;
+    height: auto;
+}
+
+.personWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+.personDescription {
+    display: flex;
+	align-items: center;
+    padding: 0 2% 1% 8%;
+    width: 50%;
+    border-bottom: 1px solid rgb(200, 155, 60);
+}
+
+.personImage {
+    display: flex;
+	align-items: center;
+    padding: 0 0 1% 0;
+}
+
+.personDescription > p {
+    font-family: "Spiegel";
+    font-size: 1rem;
+    line-height: 1.24;
+    letter-spacing: 0.01em;
+    color: rgb(160, 155, 140);
+}
+
+.personImage > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
