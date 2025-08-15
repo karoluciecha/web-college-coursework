@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>The DOM</title>
+    </head>
+    <body>
+        
+        <h1 id="myHeading1">This is Heading 1</h1>
+        <button onclick="changeH1()">Change h1</button>
+        <h2 id="myHeading2">This is Heading 2</h2>
+        <button onclick="changeH2()">Change h2</button>
+        <h2 id="myHeading3">This is Heading 3</h2>
+        <button onclick="changeH3()">Change h3</button>
+        <br><br><hr>
+        <h1>Changing styles with the DOM</h1>
+        <h2 id="myText">Change this text</h2>
+        <button onclick="changeColor()">Change color of h2</button>
+        <button onclick="changeSize()">Change font size of h2</button>
+        <button onclick="changeFont()">Change font style of h2</button>
+        <br><br><hr>
+        <button onclick="image()" id="changer">Change to image</button><br>
+        <h1 id="jsTxt">This is JavaScript</h1>
+        <img id="jsImg" src="js.jpg">
+        <div id="imgSettings"><br>
+            <label for="num1">Width:</label>
+            <input type="text" id="num1" name="num1">
+            <label for="num2">Length:</label>
+            <input type="text" id="num2" name="num2"><br><br>
+            <button onclick="imageSize()">Change to size specified</button>
+    </body>
+    <script src="script.js"></script>
+</html>

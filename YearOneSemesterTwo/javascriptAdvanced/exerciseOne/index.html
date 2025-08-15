@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>HTML5 Events</title>
+    </head>
+    <body>
+        <button onclick="myFunction()">Click me!</button><br><br>
+        <button ondblclick="myFunction()">Double click me!</button><br><br>
+        <button onmouseover="myFunction()">Hover me!</button><br><br>
+        <button onmouseout="myFunction()">Hover me not!</button>
+        <h1 id="myHeading"></h1>
+        <input id="inBox" oninput="writeFunction()">
+        <br><br><hr>
+        <input type="number" id="inBox1" oninput="calculateFunction()">
+        <label>+</label>
+        <input type="number" id="inBox2" oninput="calculateFunction()">
+        <label>=</label>
+        <p id="result"></p>
+        <br><br><hr>
+        <h1>Live clock</h1>
+        <h3 id="clock"></h3>        
+        <script src="script.js"></script>
+    </body>
+</html>
