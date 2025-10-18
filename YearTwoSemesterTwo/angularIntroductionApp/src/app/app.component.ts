@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { AComponent } from './a/a.component'; // Import AComponent
 import { BComponent } from './b/b.component'; // Import BComponent
 
 @Component({
   selector: 'root-directive',
-  imports: [RouterOutlet, AComponent, BComponent], // Add AComponent, BComponent to imports
+  imports: [AComponent, BComponent], // Add AComponent, BComponent to imports
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
