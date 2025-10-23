@@ -37,6 +37,8 @@ yarn-error.log
 testem.log
 /typings
 __screenshots__/
+README.md
+package-lock.json
 
 # System files
 .DS_Store

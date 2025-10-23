@@ -1,0 +1,31 @@
+<!-- Displaying data from data.service -->
+<h1>Dog Breeds</h1>
+
+<label for="breedSelect">Select a breed</label><br>
+<select id="breedSelect" [(ngModel)]="selectedBreedId" (change)="onSelectBreed()">
+  <option value="">-- Choose a breed --</option>
+  <option *ngFor="let breed of breeds" [value]="breed.id">
+    {{ breed.name }}
+  </option>
+</select>
+
+@if (selectedBreed) {
+  <div class="breed-details">
+    <h3>{{ selectedBreed.name }}</h3>
+    @if (selectedBreed.image) {
+    <img height="250px" [src]="selectedBreed.image.url" [alt]="selectedBreed.name" />
+    }
+    <p><strong>Bred for:</strong> {{ selectedBreed.bred_for || 'N/A' }}</p>
+    <p><strong>Breed group:</strong> {{ selectedBreed.breed_group || 'N/A' }}</p>
+    <p><strong>Life span:</strong> {{ selectedBreed.life_span }}</p>
+    <p><strong>Temperament:</strong> {{ selectedBreed.temperament }}</p>
+  </div>
+}
+<hr>
+<!-- Displaying data from weather.service -->
+<h1>Weather Data</h1>
+<!-- @for gets rid of an error when interface tries to load data while its still loading -->
+@for(w of weatherConditions; track w) {
+<p>{{weatherConditions[0].main}}, {{weatherConditions[0].description}}</p>
+}
+<p>Temperature: {{weatherTemperature[0]}} | Feels like: {{weatherTemperature[1]}}</p>
